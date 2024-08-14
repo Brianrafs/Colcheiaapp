@@ -1,0 +1,137 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bk_gray"
+    tools:context="com.example.colcheiaapp.LoginActivity">
+
+    <!-- Ícone de nota musical -->
+    <ImageView
+        android:id="@+id/music_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:contentDescription="@string/logotipo_do_app"
+        android:src="@drawable/ic_music_note"
+        app:tint="#ffffff" />
+
+    <!-- Texto Colcheia App -->
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/music_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/colcheia_app"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Caixa de login -->
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@drawable/rounded_corner_background">
+
+        <!-- Campo de e-mail -->
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:hint="@string/email"
+            android:background="@color/light_gray"
+            android:inputType="textEmailAddress"
+            android:padding="12dp"
+            android:textColor="#000000" />
+
+        <!-- Campo de senha -->
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:hint="@string/senha"
+            android:background="@color/light_gray"
+            android:padding="12dp"
+            android:textColor="#000000"
+            android:inputType="textPassword"
+            android:layout_marginTop="8dp" />
+
+        <!-- Botões de login social -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <!-- Botão Google -->
+            <ImageButton
+                android:id="@+id/btn_google"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/ic_google"
+                android:contentDescription="@string/google_icon" />
+
+            <!-- Botão Facebook -->
+            <ImageButton
+                android:id="@+id/btn_facebook"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/ic_facebook"
+                android:contentDescription="@string/facebook_icon" />
+
+            <!-- Botão Apple -->
+            <ImageButton
+                android:id="@+id/btn_apple"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/ic_apple"
+                android:contentDescription="@string/apple_icon" />
+        </LinearLayout>
+
+        <!-- Botão Sign In -->
+        <Button
+            android:id="@+id/btn_sign_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/primary_blue"
+            android:text="@string/sign_in"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+    <!-- Link para criar uma conta -->
+    <TextView
+        android:id="@+id/tv_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_sign_in"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="@string/you_don_t_have_an_account"
+        android:textColor="#ffffff"
+        tools:ignore="NotSibling" />
+
+    <!-- Link para Sign Up -->
+    <TextView
+        android:id="@+id/tv_signup_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_signup"
+        android:layout_centerHorizontal="true"
+        android:text="@string/sign_up"
+        android:textColor="#3498db"
+        android:textStyle="bold" />
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Colcheiaapp</string>
+    <string name="sign_in">Sign in</string>
+    <string name="you_don_t_have_an_account">You don\'t have an account?</string>
+    <string name="sign_up">sign up</string>
+    <string name="apple_icon">apple_icon</string>
+    <string name="facebook_icon">facebook icon</string>
+    <string name="google_icon">google icon</string>
+    <string name="senha">senha</string>
+    <string name="email">email</string>
+    <string name="colcheia_app">Colcheia App</string>
+    <string name="logotipo_do_app">Logotipo do app</string>
+</resources>
